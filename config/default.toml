@@ -1,0 +1,18 @@
+[research]
+seed = 42
+samples = 2000
+min_training_days = 120
+assumed_publication_lag_days = 2
+
+[execution]
+quantity = 10.0
+safety_margin = 0.04
+probability_haircut = 0.08
+latency_price_stress = 0.02
+book_max_age_seconds = 30
+source_max_age_hours = 36
+metadata_max_age_seconds = 300
+execution_delay_seconds = 5
+max_family_capital = 100.0
+max_portfolio_capital = 500.0
+settlement_delay_days = 3

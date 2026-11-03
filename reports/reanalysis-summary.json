@@ -1,0 +1,1684 @@
+{
+  "mode": "revised_history_reanalysis",
+  "assumptions": {
+    "publication_lag_days": 2,
+    "revision_vintages_reconstructed": false,
+    "threshold": "training weekday forecast rounded to 100k",
+    "multi_day_error_model": "one-step residual blocks; horizon calibration provisional"
+  },
+  "metrics": {
+    "train/baseline/h1/holiday=False": {
+      "n": 61,
+      "mae": 138190.55167213114,
+      "brier": 0.19560990163934427,
+      "log_loss": 0.5893510393727649
+    },
+    "train/weekday/h1/holiday=False": {
+      "n": 61,
+      "mae": 171549.05662295083,
+      "brier": 0.27111652459016394,
+      "log_loss": 0.7589275141569326
+    },
+    "train/baseline/h3/holiday=False": {
+      "n": 61,
+      "mae": 106117.31416393444,
+      "brier": 0.2155110819672131,
+      "log_loss": 0.6195099685934979
+    },
+    "train/weekday/h3/holiday=False": {
+      "n": 61,
+      "mae": 123396.48340983604,
+      "brier": 0.2560815081967213,
+      "log_loss": 0.7211358024655143
+    },
+    "train/baseline/h7/holiday=False": {
+      "n": 61,
+      "mae": 125391.46124590164,
+      "brier": 0.20951409836065574,
+      "log_loss": 0.6182346760667511
+    },
+    "train/weekday/h7/holiday=False": {
+      "n": 61,
+      "mae": 160714.94075409832,
+      "brier": 0.28796032786885245,
+      "log_loss": 0.7925131608537426
+    },
+    "train/baseline/h7/holiday=True": {
+      "n": 16,
+      "mae": 118374.44562499996,
+      "brier": 0.165373,
+      "log_loss": 0.49830414368469894
+    },
+    "train/weekday/h7/holiday=True": {
+      "n": 16,
+      "mae": 156539.595875,
+      "brier": 0.2127965,
+      "log_loss": 0.6075260845871497
+    },
+    "train/baseline/h1/holiday=True": {
+      "n": 16,
+      "mae": 154920.149125,
+      "brier": 0.14492,
+      "log_loss": 0.4241608222293937
+    },
+    "train/weekday/h1/holiday=True": {
+      "n": 16,
+      "mae": 211671.44125000003,
+      "brier": 0.23202725000000002,
+      "log_loss": 0.6465650555952132
+    },
+    "train/baseline/h3/holiday=True": {
+      "n": 16,
+      "mae": 267194.31775000005,
+      "brier": 0.282702,
+      "log_loss": 0.7969458310355773
+    },
+    "train/weekday/h3/holiday=True": {
+      "n": 16,
+      "mae": 312057.95912500005,
+      "brier": 0.33269575,
+      "log_loss": 0.9068201742261852
+    },
+    "validation/baseline/h1/holiday=False": {
+      "n": 20,
+      "mae": 130528.9205,
+      "brier": 0.1366082,
+      "log_loss": 0.4287815996315574
+    },
+    "validation/weekday/h1/holiday=False": {
+      "n": 20,
+      "mae": 196211.7083,
+      "brier": 0.2229204,
+      "log_loss": 0.637382355099334
+    },
+    "validation/baseline/h3/holiday=False": {
+      "n": 20,
+      "mae": 104852.005,
+      "brier": 0.164285,
+      "log_loss": 0.5094294855243021
+    },
+    "validation/weekday/h3/holiday=False": {
+      "n": 20,
+      "mae": 169149.44960000002,
+      "brier": 0.3081596,
+      "log_loss": 0.812036742903637
+    },
+    "validation/baseline/h7/holiday=False": {
+      "n": 20,
+      "mae": 156899.37039999999,
+      "brier": 0.0803414,
+      "log_loss": 0.30471285944009097
+    },
+    "validation/weekday/h7/holiday=False": {
+      "n": 20,
+      "mae": 228222.3914,
+      "brier": 0.2338952,
+      "log_loss": 0.658720199032524
+    },
+    "validation/baseline/h7/holiday=True": {
+      "n": 6,
+      "mae": 151762.71800000002,
+      "brier": 0.15088666666666667,
+      "log_loss": 0.4830656776316521
+    },
+    "validation/weekday/h7/holiday=True": {
+      "n": 6,
+      "mae": 215247.7606666667,
+      "brier": 0.30898,
+      "log_loss": 0.8161816926068209
+    },
+    "validation/baseline/h1/holiday=True": {
+      "n": 6,
+      "mae": 300278.6966666666,
+      "brier": 0.24596666666666667,
+      "log_loss": 1.0407998382383403
+    },
+    "validation/weekday/h1/holiday=True": {
+      "n": 6,
+      "mae": 439828.0663333333,
+      "brier": 0.31110533333333334,
+      "log_loss": 0.8176752039560885
+    },
+    "validation/baseline/h3/holiday=True": {
+      "n": 6,
+      "mae": 136949.00500000003,
+      "brier": 0.03835866666666667,
+      "log_loss": 0.16438495032718684
+    },
+    "validation/weekday/h3/holiday=True": {
+      "n": 6,
+      "mae": 368231.1656666666,
+      "brier": 0.22424733333333335,
+      "log_loss": 0.6400623821246574
+    },
+    "test/baseline/h1/holiday=False": {
+      "n": 21,
+      "mae": 122746.7577142857,
+      "brier": 0.14774228571428571,
+      "log_loss": 0.4717402309129703
+    },
+    "test/weekday/h1/holiday=False": {
+      "n": 21,
+      "mae": 183698.60799999995,
+      "brier": 0.2988398095238095,
+      "log_loss": 0.8006014028507349
+    },
+    "test/baseline/h3/holiday=False": {
+      "n": 21,
+      "mae": 101441.90076190478,
+      "brier": 0.22285542857142857,
+      "log_loss": 0.6493280680050266
+    },
+    "test/weekday/h3/holiday=False": {
+      "n": 21,
+      "mae": 123774.4189523809,
+      "brier": 0.2497434285714286,
+      "log_loss": 0.6955352727983041
+    },
+    "test/baseline/h7/holiday=False": {
+      "n": 21,
+      "mae": 94799.97142857139,
+      "brier": 0.2209512380952381,
+      "log_loss": 0.6207469038368633
+    },
+    "test/weekday/h7/holiday=False": {
+      "n": 21,
+      "mae": 135475.6255238095,
+      "brier": 0.32003790476190475,
+      "log_loss": 0.8441749397935424
+    },
+    "test/baseline/h7/holiday=True": {
+      "n": 5,
+      "mae": 80308.56839999995,
+      "brier": 0.052008000000000006,
+      "log_loss": 0.21841461102840953
+    },
+    "test/weekday/h7/holiday=True": {
+      "n": 5,
+      "mae": 173239.3176000001,
+      "brier": 0.205928,
+      "log_loss": 0.601279567724436
+    },
+    "test/baseline/h1/holiday=True": {
+      "n": 5,
+      "mae": 132514.25599999996,
+      "brier": 0.052759200000000006,
+      "log_loss": 0.17925083020384872
+    },
+    "test/weekday/h1/holiday=True": {
+      "n": 5,
+      "mae": 240100.94359999994,
+      "brier": 0.1757672,
+      "log_loss": 0.5432294050423955
+    },
+    "test/baseline/h3/holiday=True": {
+      "n": 5,
+      "mae": 94626.0512000001,
+      "brier": 0.14894320000000003,
+      "log_loss": 0.44512079809822963
+    },
+    "test/weekday/h3/holiday=True": {
+      "n": 5,
+      "mae": 175669.55919999993,
+      "brier": 0.26847760000000004,
+      "log_loss": 0.7334143168206663
+    }
+  },
+  "calibration": [
+    {
+      "group": "train/baseline/h1/holiday=False",
+      "bin": 1,
+      "n": 1,
+      "predicted": 0.124,
+      "observed": 0
+    },
+    {
+      "group": "train/baseline/h1/holiday=False",
+      "bin": 2,
+      "n": 5,
+      "predicted": 0.2448,
+      "observed": 0
+    },
+    {
+      "group": "train/baseline/h1/holiday=False",
+      "bin": 3,
+      "n": 2,
+      "predicted": 0.347,
+      "observed": 0
+    },
+    {
+      "group": "train/baseline/h1/holiday=False",
+      "bin": 4,
+      "n": 9,
+      "predicted": 0.44133333333333336,
+      "observed": 0.2222222222222222
+    },
+    {
+      "group": "train/baseline/h1/holiday=False",
+      "bin": 5,
+      "n": 13,
+      "predicted": 0.556923076923077,
+      "observed": 0.46153846153846156
+    },
+    {
+      "group": "train/baseline/h1/holiday=False",
+      "bin": 6,
+      "n": 8,
+      "predicted": 0.652,
+      "observed": 0.625
+    },
+    {
+      "group": "train/baseline/h1/holiday=False",
+      "bin": 7,
+      "n": 11,
+      "predicted": 0.7616363636363637,
+      "observed": 0.8181818181818182
+    },
+    {
+      "group": "train/baseline/h1/holiday=False",
+      "bin": 8,
+      "n": 8,
+      "predicted": 0.8412499999999999,
+      "observed": 0.875
+    },
+    {
+      "group": "train/baseline/h1/holiday=False",
+      "bin": 9,
+      "n": 4,
+      "predicted": 0.906,
+      "observed": 0.5
+    },
+    {
+      "group": "train/weekday/h1/holiday=False",
+      "bin": 2,
+      "n": 1,
+      "predicted": 0.288,
+      "observed": 0
+    },
+    {
+      "group": "train/weekday/h1/holiday=False",
+      "bin": 3,
+      "n": 4,
+      "predicted": 0.34099999999999997,
+      "observed": 0.25
+    },
+    {
+      "group": "train/weekday/h1/holiday=False",
+      "bin": 4,
+      "n": 12,
+      "predicted": 0.455,
+      "observed": 0.5
+    },
+    {
+      "group": "train/weekday/h1/holiday=False",
+      "bin": 5,
+      "n": 14,
+      "predicted": 0.5514285714285715,
+      "observed": 0.6428571428571429
+    },
+    {
+      "group": "train/weekday/h1/holiday=False",
+      "bin": 6,
+      "n": 10,
+      "predicted": 0.6486,
+      "observed": 0.3
+    },
+    {
+      "group": "train/weekday/h1/holiday=False",
+      "bin": 7,
+      "n": 9,
+      "predicted": 0.7477777777777778,
+      "observed": 0.5555555555555556
+    },
+    {
+      "group": "train/weekday/h1/holiday=False",
+      "bin": 8,
+      "n": 8,
+      "predicted": 0.84625,
+      "observed": 0.75
+    },
+    {
+      "group": "train/weekday/h1/holiday=False",
+      "bin": 9,
+      "n": 3,
+      "predicted": 0.9066666666666667,
+      "observed": 0.3333333333333333
+    },
+    {
+      "group": "train/baseline/h3/holiday=False",
+      "bin": 1,
+      "n": 1,
+      "predicted": 0.112,
+      "observed": 0
+    },
+    {
+      "group": "train/baseline/h3/holiday=False",
+      "bin": 2,
+      "n": 1,
+      "predicted": 0.246,
+      "observed": 0
+    },
+    {
+      "group": "train/baseline/h3/holiday=False",
+      "bin": 3,
+      "n": 4,
+      "predicted": 0.344,
+      "observed": 0.75
+    },
+    {
+      "group": "train/baseline/h3/holiday=False",
+      "bin": 4,
+      "n": 8,
+      "predicted": 0.44475,
+      "observed": 0.25
+    },
+    {
+      "group": "train/baseline/h3/holiday=False",
+      "bin": 5,
+      "n": 13,
+      "predicted": 0.5372307692307693,
+      "observed": 0.6153846153846154
+    },
+    {
+      "group": "train/baseline/h3/holiday=False",
+      "bin": 6,
+      "n": 16,
+      "predicted": 0.6547499999999999,
+      "observed": 0.75
+    },
+    {
+      "group": "train/baseline/h3/holiday=False",
+      "bin": 7,
+      "n": 12,
+      "predicted": 0.7476666666666667,
+      "observed": 0.6666666666666666
+    },
+    {
+      "group": "train/baseline/h3/holiday=False",
+      "bin": 8,
+      "n": 5,
+      "predicted": 0.84,
+      "observed": 0.8
+    },
+    {
+      "group": "train/baseline/h3/holiday=False",
+      "bin": 9,
+      "n": 1,
+      "predicted": 0.9,
+      "observed": 1
+    },
+    {
+      "group": "train/weekday/h3/holiday=False",
+      "bin": 2,
+      "n": 1,
+      "predicted": 0.228,
+      "observed": 0
+    },
+    {
+      "group": "train/weekday/h3/holiday=False",
+      "bin": 3,
+      "n": 5,
+      "predicted": 0.3472,
+      "observed": 0.4
+    },
+    {
+      "group": "train/weekday/h3/holiday=False",
+      "bin": 4,
+      "n": 5,
+      "predicted": 0.4448,
+      "observed": 0.6
+    },
+    {
+      "group": "train/weekday/h3/holiday=False",
+      "bin": 5,
+      "n": 17,
+      "predicted": 0.5528235294117647,
+      "observed": 0.7647058823529411
+    },
+    {
+      "group": "train/weekday/h3/holiday=False",
+      "bin": 6,
+      "n": 12,
+      "predicted": 0.6485,
+      "observed": 0.6666666666666666
+    },
+    {
+      "group": "train/weekday/h3/holiday=False",
+      "bin": 7,
+      "n": 11,
+      "predicted": 0.7490909090909091,
+      "observed": 0.6363636363636364
+    },
+    {
+      "group": "train/weekday/h3/holiday=False",
+      "bin": 8,
+      "n": 10,
+      "predicted": 0.8398,
+      "observed": 0.5
+    },
+    {
+      "group": "train/baseline/h7/holiday=False",
+      "bin": 1,
+      "n": 4,
+      "predicted": 0.14200000000000002,
+      "observed": 0
+    },
+    {
+      "group": "train/baseline/h7/holiday=False",
+      "bin": 2,
+      "n": 3,
+      "predicted": 0.26666666666666666,
+      "observed": 0
+    },
+    {
+      "group": "train/baseline/h7/holiday=False",
+      "bin": 3,
+      "n": 2,
+      "predicted": 0.358,
+      "observed": 0
+    },
+    {
+      "group": "train/baseline/h7/holiday=False",
+      "bin": 4,
+      "n": 7,
+      "predicted": 0.43114285714285716,
+      "observed": 0.42857142857142855
+    },
+    {
+      "group": "train/baseline/h7/holiday=False",
+      "bin": 5,
+      "n": 10,
+      "predicted": 0.5534,
+      "observed": 0.6
+    },
+    {
+      "group": "train/baseline/h7/holiday=False",
+      "bin": 6,
+      "n": 12,
+      "predicted": 0.6353333333333333,
+      "observed": 0.5833333333333334
+    },
+    {
+      "group": "train/baseline/h7/holiday=False",
+      "bin": 7,
+      "n": 12,
+      "predicted": 0.7496666666666667,
+      "observed": 0.8333333333333334
+    },
+    {
+      "group": "train/baseline/h7/holiday=False",
+      "bin": 8,
+      "n": 10,
+      "predicted": 0.856,
+      "observed": 0.5
+    },
+    {
+      "group": "train/baseline/h7/holiday=False",
+      "bin": 9,
+      "n": 1,
+      "predicted": 0.948,
+      "observed": 1
+    },
+    {
+      "group": "train/weekday/h7/holiday=False",
+      "bin": 2,
+      "n": 1,
+      "predicted": 0.28,
+      "observed": 0
+    },
+    {
+      "group": "train/weekday/h7/holiday=False",
+      "bin": 3,
+      "n": 4,
+      "predicted": 0.3365,
+      "observed": 0.25
+    },
+    {
+      "group": "train/weekday/h7/holiday=False",
+      "bin": 4,
+      "n": 7,
+      "predicted": 0.44857142857142857,
+      "observed": 0.5714285714285714
+    },
+    {
+      "group": "train/weekday/h7/holiday=False",
+      "bin": 5,
+      "n": 13,
+      "predicted": 0.5383076923076924,
+      "observed": 0.6923076923076923
+    },
+    {
+      "group": "train/weekday/h7/holiday=False",
+      "bin": 6,
+      "n": 14,
+      "predicted": 0.6534285714285715,
+      "observed": 0.7142857142857143
+    },
+    {
+      "group": "train/weekday/h7/holiday=False",
+      "bin": 7,
+      "n": 11,
+      "predicted": 0.748,
+      "observed": 0.18181818181818182
+    },
+    {
+      "group": "train/weekday/h7/holiday=False",
+      "bin": 8,
+      "n": 11,
+      "predicted": 0.8409090909090909,
+      "observed": 0.5454545454545454
+    },
+    {
+      "group": "train/baseline/h7/holiday=True",
+      "bin": 3,
+      "n": 1,
+      "predicted": 0.326,
+      "observed": 1
+    },
+    {
+      "group": "train/baseline/h7/holiday=True",
+      "bin": 4,
+      "n": 3,
+      "predicted": 0.458,
+      "observed": 0.6666666666666666
+    },
+    {
+      "group": "train/baseline/h7/holiday=True",
+      "bin": 5,
+      "n": 2,
+      "predicted": 0.5349999999999999,
+      "observed": 0.5
+    },
+    {
+      "group": "train/baseline/h7/holiday=True",
+      "bin": 6,
+      "n": 3,
+      "predicted": 0.6679999999999999,
+      "observed": 0.6666666666666666
+    },
+    {
+      "group": "train/baseline/h7/holiday=True",
+      "bin": 7,
+      "n": 4,
+      "predicted": 0.7535000000000001,
+      "observed": 1
+    },
+    {
+      "group": "train/baseline/h7/holiday=True",
+      "bin": 8,
+      "n": 2,
+      "predicted": 0.825,
+      "observed": 1
+    },
+    {
+      "group": "train/baseline/h7/holiday=True",
+      "bin": 9,
+      "n": 1,
+      "predicted": 0.95,
+      "observed": 1
+    },
+    {
+      "group": "train/weekday/h7/holiday=True",
+      "bin": 2,
+      "n": 1,
+      "predicted": 0.294,
+      "observed": 1
+    },
+    {
+      "group": "train/weekday/h7/holiday=True",
+      "bin": 3,
+      "n": 1,
+      "predicted": 0.34,
+      "observed": 1
+    },
+    {
+      "group": "train/weekday/h7/holiday=True",
+      "bin": 4,
+      "n": 2,
+      "predicted": 0.46699999999999997,
+      "observed": 0.5
+    },
+    {
+      "group": "train/weekday/h7/holiday=True",
+      "bin": 5,
+      "n": 4,
+      "predicted": 0.5705,
+      "observed": 1
+    },
+    {
+      "group": "train/weekday/h7/holiday=True",
+      "bin": 6,
+      "n": 4,
+      "predicted": 0.6475,
+      "observed": 0.5
+    },
+    {
+      "group": "train/weekday/h7/holiday=True",
+      "bin": 7,
+      "n": 2,
+      "predicted": 0.753,
+      "observed": 1
+    },
+    {
+      "group": "train/weekday/h7/holiday=True",
+      "bin": 8,
+      "n": 2,
+      "predicted": 0.865,
+      "observed": 1
+    },
+    {
+      "group": "train/baseline/h1/holiday=True",
+      "bin": 1,
+      "n": 1,
+      "predicted": 0.126,
+      "observed": 0
+    },
+    {
+      "group": "train/baseline/h1/holiday=True",
+      "bin": 3,
+      "n": 1,
+      "predicted": 0.36,
+      "observed": 1
+    },
+    {
+      "group": "train/baseline/h1/holiday=True",
+      "bin": 4,
+      "n": 2,
+      "predicted": 0.472,
+      "observed": 0.5
+    },
+    {
+      "group": "train/baseline/h1/holiday=True",
+      "bin": 5,
+      "n": 3,
+      "predicted": 0.528,
+      "observed": 0.3333333333333333
+    },
+    {
+      "group": "train/baseline/h1/holiday=True",
+      "bin": 6,
+      "n": 1,
+      "predicted": 0.648,
+      "observed": 0
+    },
+    {
+      "group": "train/baseline/h1/holiday=True",
+      "bin": 7,
+      "n": 1,
+      "predicted": 0.768,
+      "observed": 1
+    },
+    {
+      "group": "train/baseline/h1/holiday=True",
+      "bin": 8,
+      "n": 2,
+      "predicted": 0.84,
+      "observed": 1
+    },
+    {
+      "group": "train/baseline/h1/holiday=True",
+      "bin": 9,
+      "n": 5,
+      "predicted": 0.9404,
+      "observed": 1
+    },
+    {
+      "group": "train/weekday/h1/holiday=True",
+      "bin": 3,
+      "n": 2,
+      "predicted": 0.375,
+      "observed": 0.5
+    },
+    {
+      "group": "train/weekday/h1/holiday=True",
+      "bin": 4,
+      "n": 6,
+      "predicted": 0.45566666666666666,
+      "observed": 0.6666666666666666
+    },
+    {
+      "group": "train/weekday/h1/holiday=True",
+      "bin": 5,
+      "n": 1,
+      "predicted": 0.506,
+      "observed": 1
+    },
+    {
+      "group": "train/weekday/h1/holiday=True",
+      "bin": 6,
+      "n": 2,
+      "predicted": 0.645,
+      "observed": 0.5
+    },
+    {
+      "group": "train/weekday/h1/holiday=True",
+      "bin": 7,
+      "n": 3,
+      "predicted": 0.7646666666666667,
+      "observed": 0.6666666666666666
+    },
+    {
+      "group": "train/weekday/h1/holiday=True",
+      "bin": 8,
+      "n": 1,
+      "predicted": 0.866,
+      "observed": 1
+    },
+    {
+      "group": "train/weekday/h1/holiday=True",
+      "bin": 9,
+      "n": 1,
+      "predicted": 0.914,
+      "observed": 1
+    },
+    {
+      "group": "train/baseline/h3/holiday=True",
+      "bin": 0,
+      "n": 2,
+      "predicted": 0.05,
+      "observed": 0
+    },
+    {
+      "group": "train/baseline/h3/holiday=True",
+      "bin": 2,
+      "n": 1,
+      "predicted": 0.242,
+      "observed": 0
+    },
+    {
+      "group": "train/baseline/h3/holiday=True",
+      "bin": 3,
+      "n": 3,
+      "predicted": 0.3406666666666667,
+      "observed": 0.6666666666666666
+    },
+    {
+      "group": "train/baseline/h3/holiday=True",
+      "bin": 4,
+      "n": 2,
+      "predicted": 0.413,
+      "observed": 1
+    },
+    {
+      "group": "train/baseline/h3/holiday=True",
+      "bin": 5,
+      "n": 3,
+      "predicted": 0.552,
+      "observed": 0.6666666666666666
+    },
+    {
+      "group": "train/baseline/h3/holiday=True",
+      "bin": 6,
+      "n": 1,
+      "predicted": 0.648,
+      "observed": 0
+    },
+    {
+      "group": "train/baseline/h3/holiday=True",
+      "bin": 8,
+      "n": 2,
+      "predicted": 0.827,
+      "observed": 1
+    },
+    {
+      "group": "train/baseline/h3/holiday=True",
+      "bin": 9,
+      "n": 2,
+      "predicted": 0.904,
+      "observed": 0
+    },
+    {
+      "group": "train/weekday/h3/holiday=True",
+      "bin": 2,
+      "n": 2,
+      "predicted": 0.269,
+      "observed": 0.5
+    },
+    {
+      "group": "train/weekday/h3/holiday=True",
+      "bin": 3,
+      "n": 2,
+      "predicted": 0.33899999999999997,
+      "observed": 1
+    },
+    {
+      "group": "train/weekday/h3/holiday=True",
+      "bin": 4,
+      "n": 2,
+      "predicted": 0.46799999999999997,
+      "observed": 0
+    },
+    {
+      "group": "train/weekday/h3/holiday=True",
+      "bin": 5,
+      "n": 2,
+      "predicted": 0.546,
+      "observed": 0.5
+    },
+    {
+      "group": "train/weekday/h3/holiday=True",
+      "bin": 6,
+      "n": 3,
+      "predicted": 0.6213333333333333,
+      "observed": 0.6666666666666666
+    },
+    {
+      "group": "train/weekday/h3/holiday=True",
+      "bin": 7,
+      "n": 2,
+      "predicted": 0.722,
+      "observed": 0.5
+    },
+    {
+      "group": "train/weekday/h3/holiday=True",
+      "bin": 8,
+      "n": 3,
+      "predicted": 0.8486666666666667,
+      "observed": 0.3333333333333333
+    },
+    {
+      "group": "validation/baseline/h1/holiday=False",
+      "bin": 0,
+      "n": 3,
+      "predicted": 0.07266666666666667,
+      "observed": 0
+    },
+    {
+      "group": "validation/baseline/h1/holiday=False",
+      "bin": 1,
+      "n": 1,
+      "predicted": 0.102,
+      "observed": 0
+    },
+    {
+      "group": "validation/baseline/h1/holiday=False",
+      "bin": 2,
+      "n": 3,
+      "predicted": 0.21666666666666667,
+      "observed": 0
+    },
+    {
+      "group": "validation/baseline/h1/holiday=False",
+      "bin": 3,
+      "n": 2,
+      "predicted": 0.354,
+      "observed": 0
+    },
+    {
+      "group": "validation/baseline/h1/holiday=False",
+      "bin": 4,
+      "n": 2,
+      "predicted": 0.456,
+      "observed": 0.5
+    },
+    {
+      "group": "validation/baseline/h1/holiday=False",
+      "bin": 5,
+      "n": 3,
+      "predicted": 0.53,
+      "observed": 0.6666666666666666
+    },
+    {
+      "group": "validation/baseline/h1/holiday=False",
+      "bin": 6,
+      "n": 3,
+      "predicted": 0.668,
+      "observed": 0.3333333333333333
+    },
+    {
+      "group": "validation/baseline/h1/holiday=False",
+      "bin": 7,
+      "n": 2,
+      "predicted": 0.747,
+      "observed": 1
+    },
+    {
+      "group": "validation/baseline/h1/holiday=False",
+      "bin": 8,
+      "n": 1,
+      "predicted": 0.84,
+      "observed": 1
+    },
+    {
+      "group": "validation/weekday/h1/holiday=False",
+      "bin": 2,
+      "n": 1,
+      "predicted": 0.288,
+      "observed": 0
+    },
+    {
+      "group": "validation/weekday/h1/holiday=False",
+      "bin": 3,
+      "n": 6,
+      "predicted": 0.3636666666666667,
+      "observed": 0.3333333333333333
+    },
+    {
+      "group": "validation/weekday/h1/holiday=False",
+      "bin": 4,
+      "n": 6,
+      "predicted": 0.4603333333333333,
+      "observed": 0.16666666666666666
+    },
+    {
+      "group": "validation/weekday/h1/holiday=False",
+      "bin": 5,
+      "n": 5,
+      "predicted": 0.54,
+      "observed": 0.6
+    },
+    {
+      "group": "validation/weekday/h1/holiday=False",
+      "bin": 6,
+      "n": 2,
+      "predicted": 0.634,
+      "observed": 0.5
+    },
+    {
+      "group": "validation/baseline/h3/holiday=False",
+      "bin": 1,
+      "n": 2,
+      "predicted": 0.183,
+      "observed": 0
+    },
+    {
+      "group": "validation/baseline/h3/holiday=False",
+      "bin": 3,
+      "n": 6,
+      "predicted": 0.3406666666666667,
+      "observed": 0.3333333333333333
+    },
+    {
+      "group": "validation/baseline/h3/holiday=False",
+      "bin": 4,
+      "n": 1,
+      "predicted": 0.482,
+      "observed": 1
+    },
+    {
+      "group": "validation/baseline/h3/holiday=False",
+      "bin": 5,
+      "n": 2,
+      "predicted": 0.5489999999999999,
+      "observed": 0.5
+    },
+    {
+      "group": "validation/baseline/h3/holiday=False",
+      "bin": 6,
+      "n": 5,
+      "predicted": 0.626,
+      "observed": 1
+    },
+    {
+      "group": "validation/baseline/h3/holiday=False",
+      "bin": 7,
+      "n": 3,
+      "predicted": 0.7166666666666667,
+      "observed": 1
+    },
+    {
+      "group": "validation/baseline/h3/holiday=False",
+      "bin": 8,
+      "n": 1,
+      "predicted": 0.804,
+      "observed": 1
+    },
+    {
+      "group": "validation/weekday/h3/holiday=False",
+      "bin": 2,
+      "n": 1,
+      "predicted": 0.264,
+      "observed": 0
+    },
+    {
+      "group": "validation/weekday/h3/holiday=False",
+      "bin": 3,
+      "n": 6,
+      "predicted": 0.37233333333333335,
+      "observed": 1
+    },
+    {
+      "group": "validation/weekday/h3/holiday=False",
+      "bin": 4,
+      "n": 8,
+      "predicted": 0.47725,
+      "observed": 0.625
+    },
+    {
+      "group": "validation/weekday/h3/holiday=False",
+      "bin": 5,
+      "n": 3,
+      "predicted": 0.5413333333333333,
+      "observed": 0.6666666666666666
+    },
+    {
+      "group": "validation/weekday/h3/holiday=False",
+      "bin": 6,
+      "n": 2,
+      "predicted": 0.658,
+      "observed": 0
+    },
+    {
+      "group": "validation/baseline/h7/holiday=False",
+      "bin": 0,
+      "n": 2,
+      "predicted": 0.074,
+      "observed": 0
+    },
+    {
+      "group": "validation/baseline/h7/holiday=False",
+      "bin": 1,
+      "n": 3,
+      "predicted": 0.124,
+      "observed": 0
+    },
+    {
+      "group": "validation/baseline/h7/holiday=False",
+      "bin": 2,
+      "n": 4,
+      "predicted": 0.2415,
+      "observed": 0
+    },
+    {
+      "group": "validation/baseline/h7/holiday=False",
+      "bin": 3,
+      "n": 2,
+      "predicted": 0.33099999999999996,
+      "observed": 0.5
+    },
+    {
+      "group": "validation/baseline/h7/holiday=False",
+      "bin": 6,
+      "n": 4,
+      "predicted": 0.6405,
+      "observed": 1
+    },
+    {
+      "group": "validation/baseline/h7/holiday=False",
+      "bin": 7,
+      "n": 1,
+      "predicted": 0.742,
+      "observed": 1
+    },
+    {
+      "group": "validation/baseline/h7/holiday=False",
+      "bin": 8,
+      "n": 4,
+      "predicted": 0.8405,
+      "observed": 1
+    },
+    {
+      "group": "validation/weekday/h7/holiday=False",
+      "bin": 2,
+      "n": 2,
+      "predicted": 0.28300000000000003,
+      "observed": 0
+    },
+    {
+      "group": "validation/weekday/h7/holiday=False",
+      "bin": 3,
+      "n": 6,
+      "predicted": 0.3596666666666667,
+      "observed": 0.5
+    },
+    {
+      "group": "validation/weekday/h7/holiday=False",
+      "bin": 4,
+      "n": 3,
+      "predicted": 0.4653333333333333,
+      "observed": 0.6666666666666666
+    },
+    {
+      "group": "validation/weekday/h7/holiday=False",
+      "bin": 5,
+      "n": 9,
+      "predicted": 0.5306666666666667,
+      "observed": 0.5555555555555556
+    },
+    {
+      "group": "validation/baseline/h7/holiday=True",
+      "bin": 3,
+      "n": 2,
+      "predicted": 0.34199999999999997,
+      "observed": 0
+    },
+    {
+      "group": "validation/baseline/h7/holiday=True",
+      "bin": 6,
+      "n": 2,
+      "predicted": 0.609,
+      "observed": 0.5
+    },
+    {
+      "group": "validation/baseline/h7/holiday=True",
+      "bin": 7,
+      "n": 2,
+      "predicted": 0.737,
+      "observed": 1
+    },
+    {
+      "group": "validation/weekday/h7/holiday=True",
+      "bin": 3,
+      "n": 2,
+      "predicted": 0.366,
+      "observed": 0.5
+    },
+    {
+      "group": "validation/weekday/h7/holiday=True",
+      "bin": 4,
+      "n": 2,
+      "predicted": 0.436,
+      "observed": 0.5
+    },
+    {
+      "group": "validation/weekday/h7/holiday=True",
+      "bin": 5,
+      "n": 1,
+      "predicted": 0.508,
+      "observed": 1
+    },
+    {
+      "group": "validation/weekday/h7/holiday=True",
+      "bin": 6,
+      "n": 1,
+      "predicted": 0.66,
+      "observed": 0
+    },
+    {
+      "group": "validation/baseline/h1/holiday=True",
+      "bin": 0,
+      "n": 1,
+      "predicted": 0.018,
+      "observed": 0
+    },
+    {
+      "group": "validation/baseline/h1/holiday=True",
+      "bin": 4,
+      "n": 1,
+      "predicted": 0.468,
+      "observed": 1
+    },
+    {
+      "group": "validation/baseline/h1/holiday=True",
+      "bin": 5,
+      "n": 1,
+      "predicted": 0.544,
+      "observed": 1
+    },
+    {
+      "group": "validation/baseline/h1/holiday=True",
+      "bin": 9,
+      "n": 3,
+      "predicted": 0.9873333333333333,
+      "observed": 0.6666666666666666
+    },
+    {
+      "group": "validation/weekday/h1/holiday=True",
+      "bin": 3,
+      "n": 3,
+      "predicted": 0.3413333333333333,
+      "observed": 0.6666666666666666
+    },
+    {
+      "group": "validation/weekday/h1/holiday=True",
+      "bin": 4,
+      "n": 2,
+      "predicted": 0.43,
+      "observed": 1
+    },
+    {
+      "group": "validation/weekday/h1/holiday=True",
+      "bin": 5,
+      "n": 1,
+      "predicted": 0.536,
+      "observed": 0
+    },
+    {
+      "group": "validation/baseline/h3/holiday=True",
+      "bin": 0,
+      "n": 3,
+      "predicted": 0.005333333333333333,
+      "observed": 0
+    },
+    {
+      "group": "validation/baseline/h3/holiday=True",
+      "bin": 2,
+      "n": 2,
+      "predicted": 0.267,
+      "observed": 0
+    },
+    {
+      "group": "validation/baseline/h3/holiday=True",
+      "bin": 7,
+      "n": 1,
+      "predicted": 0.706,
+      "observed": 1
+    },
+    {
+      "group": "validation/weekday/h3/holiday=True",
+      "bin": 3,
+      "n": 3,
+      "predicted": 0.34199999999999997,
+      "observed": 0.3333333333333333
+    },
+    {
+      "group": "validation/weekday/h3/holiday=True",
+      "bin": 4,
+      "n": 2,
+      "predicted": 0.463,
+      "observed": 0
+    },
+    {
+      "group": "validation/weekday/h3/holiday=True",
+      "bin": 5,
+      "n": 1,
+      "predicted": 0.522,
+      "observed": 0
+    },
+    {
+      "group": "test/baseline/h1/holiday=False",
+      "bin": 1,
+      "n": 2,
+      "predicted": 0.136,
+      "observed": 0
+    },
+    {
+      "group": "test/baseline/h1/holiday=False",
+      "bin": 2,
+      "n": 3,
+      "predicted": 0.2613333333333333,
+      "observed": 0
+    },
+    {
+      "group": "test/baseline/h1/holiday=False",
+      "bin": 3,
+      "n": 3,
+      "predicted": 0.3426666666666667,
+      "observed": 0
+    },
+    {
+      "group": "test/baseline/h1/holiday=False",
+      "bin": 4,
+      "n": 2,
+      "predicted": 0.443,
+      "observed": 0
+    },
+    {
+      "group": "test/baseline/h1/holiday=False",
+      "bin": 5,
+      "n": 5,
+      "predicted": 0.5184,
+      "observed": 0.6
+    },
+    {
+      "group": "test/baseline/h1/holiday=False",
+      "bin": 6,
+      "n": 2,
+      "predicted": 0.664,
+      "observed": 0.5
+    },
+    {
+      "group": "test/baseline/h1/holiday=False",
+      "bin": 7,
+      "n": 4,
+      "predicted": 0.722,
+      "observed": 1
+    },
+    {
+      "group": "test/weekday/h1/holiday=False",
+      "bin": 3,
+      "n": 1,
+      "predicted": 0.392,
+      "observed": 0
+    },
+    {
+      "group": "test/weekday/h1/holiday=False",
+      "bin": 4,
+      "n": 1,
+      "predicted": 0.498,
+      "observed": 1
+    },
+    {
+      "group": "test/weekday/h1/holiday=False",
+      "bin": 5,
+      "n": 11,
+      "predicted": 0.5369090909090909,
+      "observed": 0.45454545454545453
+    },
+    {
+      "group": "test/weekday/h1/holiday=False",
+      "bin": 6,
+      "n": 5,
+      "predicted": 0.6324,
+      "observed": 0.2
+    },
+    {
+      "group": "test/weekday/h1/holiday=False",
+      "bin": 7,
+      "n": 3,
+      "predicted": 0.7546666666666667,
+      "observed": 0.3333333333333333
+    },
+    {
+      "group": "test/baseline/h3/holiday=False",
+      "bin": 1,
+      "n": 1,
+      "predicted": 0.12,
+      "observed": 1
+    },
+    {
+      "group": "test/baseline/h3/holiday=False",
+      "bin": 2,
+      "n": 1,
+      "predicted": 0.298,
+      "observed": 1
+    },
+    {
+      "group": "test/baseline/h3/holiday=False",
+      "bin": 3,
+      "n": 1,
+      "predicted": 0.374,
+      "observed": 1
+    },
+    {
+      "group": "test/baseline/h3/holiday=False",
+      "bin": 4,
+      "n": 4,
+      "predicted": 0.4625,
+      "observed": 0
+    },
+    {
+      "group": "test/baseline/h3/holiday=False",
+      "bin": 5,
+      "n": 6,
+      "predicted": 0.5346666666666667,
+      "observed": 0.5
+    },
+    {
+      "group": "test/baseline/h3/holiday=False",
+      "bin": 6,
+      "n": 3,
+      "predicted": 0.632,
+      "observed": 1
+    },
+    {
+      "group": "test/baseline/h3/holiday=False",
+      "bin": 7,
+      "n": 4,
+      "predicted": 0.7404999999999999,
+      "observed": 1
+    },
+    {
+      "group": "test/baseline/h3/holiday=False",
+      "bin": 8,
+      "n": 1,
+      "predicted": 0.834,
+      "observed": 1
+    },
+    {
+      "group": "test/weekday/h3/holiday=False",
+      "bin": 4,
+      "n": 2,
+      "predicted": 0.46599999999999997,
+      "observed": 1
+    },
+    {
+      "group": "test/weekday/h3/holiday=False",
+      "bin": 5,
+      "n": 10,
+      "predicted": 0.5556,
+      "observed": 0.8
+    },
+    {
+      "group": "test/weekday/h3/holiday=False",
+      "bin": 6,
+      "n": 6,
+      "predicted": 0.634,
+      "observed": 0.3333333333333333
+    },
+    {
+      "group": "test/weekday/h3/holiday=False",
+      "bin": 7,
+      "n": 3,
+      "predicted": 0.7353333333333333,
+      "observed": 0.6666666666666666
+    },
+    {
+      "group": "test/baseline/h7/holiday=False",
+      "bin": 1,
+      "n": 3,
+      "predicted": 0.14066666666666666,
+      "observed": 0
+    },
+    {
+      "group": "test/baseline/h7/holiday=False",
+      "bin": 2,
+      "n": 1,
+      "predicted": 0.29,
+      "observed": 0
+    },
+    {
+      "group": "test/baseline/h7/holiday=False",
+      "bin": 4,
+      "n": 4,
+      "predicted": 0.4705,
+      "observed": 0.5
+    },
+    {
+      "group": "test/baseline/h7/holiday=False",
+      "bin": 5,
+      "n": 4,
+      "predicted": 0.556,
+      "observed": 0.75
+    },
+    {
+      "group": "test/baseline/h7/holiday=False",
+      "bin": 6,
+      "n": 7,
+      "predicted": 0.6362857142857143,
+      "observed": 0.42857142857142855
+    },
+    {
+      "group": "test/baseline/h7/holiday=False",
+      "bin": 7,
+      "n": 1,
+      "predicted": 0.702,
+      "observed": 0
+    },
+    {
+      "group": "test/baseline/h7/holiday=False",
+      "bin": 8,
+      "n": 1,
+      "predicted": 0.874,
+      "observed": 1
+    },
+    {
+      "group": "test/weekday/h7/holiday=False",
+      "bin": 4,
+      "n": 6,
+      "predicted": 0.449,
+      "observed": 0.6666666666666666
+    },
+    {
+      "group": "test/weekday/h7/holiday=False",
+      "bin": 5,
+      "n": 6,
+      "predicted": 0.5356666666666666,
+      "observed": 0.5
+    },
+    {
+      "group": "test/weekday/h7/holiday=False",
+      "bin": 6,
+      "n": 6,
+      "predicted": 0.6493333333333333,
+      "observed": 0.3333333333333333
+    },
+    {
+      "group": "test/weekday/h7/holiday=False",
+      "bin": 7,
+      "n": 3,
+      "predicted": 0.7446666666666667,
+      "observed": 0
+    },
+    {
+      "group": "test/baseline/h7/holiday=True",
+      "bin": 5,
+      "n": 1,
+      "predicted": 0.564,
+      "observed": 1
+    },
+    {
+      "group": "test/baseline/h7/holiday=True",
+      "bin": 8,
+      "n": 2,
+      "predicted": 0.8260000000000001,
+      "observed": 1
+    },
+    {
+      "group": "test/baseline/h7/holiday=True",
+      "bin": 9,
+      "n": 2,
+      "predicted": 0.9339999999999999,
+      "observed": 1
+    },
+    {
+      "group": "test/weekday/h7/holiday=True",
+      "bin": 4,
+      "n": 2,
+      "predicted": 0.45399999999999996,
+      "observed": 1
+    },
+    {
+      "group": "test/weekday/h7/holiday=True",
+      "bin": 5,
+      "n": 1,
+      "predicted": 0.55,
+      "observed": 1
+    },
+    {
+      "group": "test/weekday/h7/holiday=True",
+      "bin": 6,
+      "n": 2,
+      "predicted": 0.663,
+      "observed": 1
+    },
+    {
+      "group": "test/baseline/h1/holiday=True",
+      "bin": 4,
+      "n": 1,
+      "predicted": 0.496,
+      "observed": 1
+    },
+    {
+      "group": "test/baseline/h1/holiday=True",
+      "bin": 9,
+      "n": 4,
+      "predicted": 0.9525,
+      "observed": 1
+    },
+    {
+      "group": "test/weekday/h1/holiday=True",
+      "bin": 5,
+      "n": 4,
+      "predicted": 0.5765,
+      "observed": 1
+    },
+    {
+      "group": "test/weekday/h1/holiday=True",
+      "bin": 6,
+      "n": 1,
+      "predicted": 0.6,
+      "observed": 1
+    },
+    {
+      "group": "test/baseline/h3/holiday=True",
+      "bin": 0,
+      "n": 1,
+      "predicted": 0.032,
+      "observed": 0
+    },
+    {
+      "group": "test/baseline/h3/holiday=True",
+      "bin": 2,
+      "n": 1,
+      "predicted": 0.214,
+      "observed": 0
+    },
+    {
+      "group": "test/baseline/h3/holiday=True",
+      "bin": 4,
+      "n": 2,
+      "predicted": 0.44099999999999995,
+      "observed": 1
+    },
+    {
+      "group": "test/baseline/h3/holiday=True",
+      "bin": 7,
+      "n": 1,
+      "predicted": 0.734,
+      "observed": 1
+    },
+    {
+      "group": "test/weekday/h3/holiday=True",
+      "bin": 3,
+      "n": 1,
+      "predicted": 0.394,
+      "observed": 1
+    },
+    {
+      "group": "test/weekday/h3/holiday=True",
+      "bin": 4,
+      "n": 1,
+      "predicted": 0.452,
+      "observed": 0
+    },
+    {
+      "group": "test/weekday/h3/holiday=True",
+      "bin": 5,
+      "n": 1,
+      "predicted": 0.564,
+      "observed": 1
+    },
+    {
+      "group": "test/weekday/h3/holiday=True",
+      "bin": 6,
+      "n": 2,
+      "predicted": 0.674,
+      "observed": 0.5
+    }
+  ],
+  "baseline_comparison": {
+    "families": 26,
+    "mae_improvement": 51422.63074358972,
+    "brier_improvement": 0.10001061538461539,
+    "ci95": {
+      "mae": [
+        34341.45171794866,
+        70244.43005128203
+      ],
+      "brier": [
+        0.06235225641025641,
+        0.14041979487179487
+      ]
+    },
+    "warning": "Cluster bootstrap is descriptive; overlapping weeks and short samples reduce effective sample size"
+  },
+  "event_families": 129,
+  "uncertainty": "Report grouped samples; insufficient evidence for stable returns",
+  "market_comparison": null,
+  "market_comparison_reason": "No matched historical executable books",
+  "trading": {
+    "net_profit": null,
+    "maximum_drawdown": null,
+    "fill_rate": null,
+    "peak_capital": null,
+    "average_holding_days": null,
+    "reason": "Forecast validation is not trade replay"
+  },
+  "sensitivity": {
+    "execution_latency": null,
+    "slippage": null,
+    "model_bias": null,
+    "reason": "Requires historical books for execution sensitivity"
+  }
+}

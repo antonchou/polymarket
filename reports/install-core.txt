@@ -1,0 +1,18 @@
+WARNING: The directory '/home/startai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Obtaining file:///home/startai/Projects/polymarket
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: tsa-polymarket-research
+  Building editable for tsa-polymarket-research (pyproject.toml): started
+  Building editable for tsa-polymarket-research (pyproject.toml): finished with status 'done'
+  Created wheel for tsa-polymarket-research: filename=tsa_polymarket_research-0.1.0-0.editable-py3-none-any.whl size=1782 sha256=bc03e3298e2ff25464cf0c87f2f4e673f12f0f072ebc0ed9ffed998c8c4b516a
+  Stored in directory: /tmp/pip-ephem-wheel-cache-zx1dn2vh/wheels/ec/8b/b0/ff98f9740b5d17d47162215be8d089b84e9b2377a12927ed11
+Successfully built tsa-polymarket-research
+Installing collected packages: tsa-polymarket-research
+  Attempting uninstall: tsa-polymarket-research
+    Found existing installation: tsa-polymarket-research 0.1.0
+    Uninstalling tsa-polymarket-research-0.1.0:
+      Successfully uninstalled tsa-polymarket-research-0.1.0
+Successfully installed tsa-polymarket-research-0.1.0

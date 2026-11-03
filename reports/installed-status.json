@@ -1,0 +1,53 @@
+{
+  "data_status": {
+    "ok": true,
+    "new_versions": 731,
+    "errors": []
+  },
+  "discovery_status": {
+    "ok": true,
+    "complete": true,
+    "status": "no_tradable_markets",
+    "scanned": 224698,
+    "relevant": 0,
+    "pages": 2247,
+    "resumed": true
+  },
+  "book_status": {
+    "ok": true,
+    "count": 0,
+    "status": "no_books_collected",
+    "errors": []
+  },
+  "paper_run": {
+    "market_status": "no_tradable_markets",
+    "signals": [
+      {
+        "market_id": "1137733",
+        "accepted": false,
+        "reasons": [
+          "pending_review"
+        ]
+      },
+      {
+        "market_id": "1137125",
+        "accepted": false,
+        "reasons": [
+          "pending_review"
+        ]
+      }
+    ],
+    "paper": {
+      "net_profit": null,
+      "maximum_drawdown": null,
+      "drawdown_basis": "realized_ledger_only; open_positions_not_marked_to_market",
+      "fill_rate": null,
+      "peak_capital": 0,
+      "average_holding_days": null,
+      "event_families": 0,
+      "orders": 0,
+      "closed": 0,
+      "uncertainty": "Paper fills use displayed snapshots, queue/cancellation timing remains unobserved"
+    }
+  }
+}

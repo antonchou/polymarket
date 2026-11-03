@@ -1,0 +1,97 @@
+Obtaining file:///home/startai/Projects/polymarket
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Collecting duckdb<2,>=1.1 (from tsa-polymarket-research==0.1.0)
+  Downloading duckdb-1.5.6-cp314-cp314-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl.metadata (4.2 kB)
+Collecting streamlit<2,>=1.40 (from tsa-polymarket-research==0.1.0)
+  Downloading streamlit-1.66.1-py3-none-any.whl.metadata (10 kB)
+Requirement already satisfied: pytest>=8 in /home/startai/.local/lib/python3.14/site-packages (from tsa-polymarket-research==0.1.0) (9.2.0)
+Collecting altair!=5.4.0,!=5.4.1,<7,>=5.0.0 (from streamlit<2,>=1.40->tsa-polymarket-research==0.1.0)
+  Downloading altair-6.3.0-py3-none-any.whl.metadata (11 kB)
+Requirement already satisfied: click<9,>=7.0 in /usr/lib/python3/dist-packages (from streamlit<2,>=1.40->tsa-polymarket-research==0.1.0) (8.1.8)
+Collecting numpy<3,>=1.25.0 (from streamlit<2,>=1.40->tsa-polymarket-research==0.1.0)
+  Using cached numpy-2.5.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Requirement already satisfied: packaging>=20 in /usr/lib/python3/dist-packages (from streamlit<2,>=1.40->tsa-polymarket-research==0.1.0) (26.0)
+Collecting pandas<4,>=1.5.3 (from streamlit<2,>=1.40->tsa-polymarket-research==0.1.0)
+  Downloading pandas-3.1.0-cp314-cp314-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (18 kB)
+Requirement already satisfied: pillow<14,>=9.2.0 in /usr/lib/python3/dist-packages (from streamlit<2,>=1.40->tsa-polymarket-research==0.1.0) (12.1.1)
+Collecting pydeck<1,>=0.8.0b4 (from streamlit<2,>=1.40->tsa-polymarket-research==0.1.0)
+  Downloading pydeck-0.9.3-py2.py3-none-any.whl.metadata (4.2 kB)
+Collecting protobuf<8,>=5.26.1 (from streamlit<2,>=1.40->tsa-polymarket-research==0.1.0)
+  Using cached protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl.metadata (595 bytes)
+Collecting pyarrow!=25.0.0,<27,>=10.0.1 (from streamlit<2,>=1.40->tsa-polymarket-research==0.1.0)
+  Downloading pyarrow-26.0.0-cp314-cp314-manylinux_2_28_x86_64.whl.metadata (3.0 kB)
+Requirement already satisfied: requests<3,>=2.27 in /usr/lib/python3/dist-packages (from streamlit<2,>=1.40->tsa-polymarket-research==0.1.0) (2.32.5)
+Requirement already satisfied: typing-extensions<5,>=4.10.0 in /home/startai/.local/lib/python3.14/site-packages (from streamlit<2,>=1.40->tsa-polymarket-research==0.1.0) (4.16.0)
+Requirement already satisfied: starlette<2,>=0.46.0 in /home/startai/.local/lib/python3.14/site-packages (from streamlit<2,>=1.40->tsa-polymarket-research==0.1.0) (1.10.0)
+Requirement already satisfied: uvicorn<1,>=0.30.0 in /home/startai/.local/lib/python3.14/site-packages (from streamlit<2,>=1.40->tsa-polymarket-research==0.1.0) (0.54.0)
+Requirement already satisfied: anyio<5,>=4.0.0 in /home/startai/.local/lib/python3.14/site-packages (from streamlit<2,>=1.40->tsa-polymarket-research==0.1.0) (4.15.1)
+Collecting python-multipart<1,>=0.0.10 (from streamlit<2,>=1.40->tsa-polymarket-research==0.1.0)
+  Downloading python_multipart-0.0.33-py3-none-any.whl.metadata (6.3 kB)
+Collecting websockets<18,>=12.0.0 (from streamlit<2,>=1.40->tsa-polymarket-research==0.1.0)
+  Using cached websockets-17.4-cp314-cp314-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.3 kB)
+Collecting itsdangerous<3,>=2.1.2 (from streamlit<2,>=1.40->tsa-polymarket-research==0.1.0)
+  Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting watchdog<7,>=2.1.5 (from streamlit<2,>=1.40->tsa-polymarket-research==0.1.0)
+  Downloading watchdog-6.0.0-py3-none-manylinux2014_x86_64.whl.metadata (44 kB)
+Requirement already satisfied: jinja2 in /usr/lib/python3/dist-packages (from altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit<2,>=1.40->tsa-polymarket-research==0.1.0) (3.1.6)
+Requirement already satisfied: jsonschema>=3.0 in /usr/lib/python3/dist-packages (from altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit<2,>=1.40->tsa-polymarket-research==0.1.0) (4.19.2)
+Collecting narwhals>=2.4.0 (from altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit<2,>=1.40->tsa-polymarket-research==0.1.0)
+  Downloading narwhals-2.28.0-py3-none-any.whl.metadata (15 kB)
+Requirement already satisfied: idna>=2.8 in /usr/lib/python3/dist-packages (from anyio<5,>=4.0.0->streamlit<2,>=1.40->tsa-polymarket-research==0.1.0) (3.11)
+Collecting python-dateutil>=2.9.0 (from pandas<4,>=1.5.3->streamlit<2,>=1.40->tsa-polymarket-research==0.1.0)
+  Downloading python_dateutil-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Requirement already satisfied: chardet>=3.0.2 in /usr/lib/python3/dist-packages (from requests<3,>=2.27->streamlit<2,>=1.40->tsa-polymarket-research==0.1.0) (5.2.0)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/lib/python3/dist-packages (from requests<3,>=2.27->streamlit<2,>=1.40->tsa-polymarket-research==0.1.0) (2.6.3)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/lib/python3/dist-packages (from requests<3,>=2.27->streamlit<2,>=1.40->tsa-polymarket-research==0.1.0) (2026.1.4)
+Requirement already satisfied: h11>=0.8 in /home/startai/.local/lib/python3.14/site-packages (from uvicorn<1,>=0.30.0->streamlit<2,>=1.40->tsa-polymarket-research==0.1.0) (0.16.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /usr/lib/python3/dist-packages (from jinja2->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit<2,>=1.40->tsa-polymarket-research==0.1.0) (3.0.3)
+Requirement already satisfied: attrs>=22.2.0 in /usr/lib/python3/dist-packages (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit<2,>=1.40->tsa-polymarket-research==0.1.0) (25.4.0)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /usr/lib/python3/dist-packages (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit<2,>=1.40->tsa-polymarket-research==0.1.0) (2023.12.1)
+Requirement already satisfied: referencing>=0.28.4 in /usr/lib/python3/dist-packages (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit<2,>=1.40->tsa-polymarket-research==0.1.0) (0.36.2)
+Requirement already satisfied: rpds-py>=0.7.1 in /usr/lib/python3/dist-packages (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit<2,>=1.40->tsa-polymarket-research==0.1.0) (0.27.1)
+Requirement already satisfied: iniconfig>=2 in /home/startai/.local/lib/python3.14/site-packages (from pytest>=8->tsa-polymarket-research==0.1.0) (2.3.1)
+Requirement already satisfied: pluggy<2,>=1.6 in /home/startai/.local/lib/python3.14/site-packages (from pytest>=8->tsa-polymarket-research==0.1.0) (1.7.0)
+Requirement already satisfied: pygments>=2.15 in /usr/lib/python3/dist-packages (from pytest>=8->tsa-polymarket-research==0.1.0) (2.19.2)
+Collecting tzdata (from python-dateutil>=2.9.0->pandas<4,>=1.5.3->streamlit<2,>=1.40->tsa-polymarket-research==0.1.0)
+  Downloading tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+Downloading duckdb-1.5.6-cp314-cp314-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (21.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 21.6/21.6 MB 12.0 MB/s eta 0:00:00
+Downloading streamlit-1.66.1-py3-none-any.whl (10.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.4/10.4 MB 20.3 MB/s eta 0:00:00
+Downloading altair-6.3.0-py3-none-any.whl (797 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 797.2/797.2 kB 16.1 MB/s eta 0:00:00
+Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Using cached numpy-2.5.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.7 MB)
+Downloading pandas-3.1.0-cp314-cp314-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.0/12.0 MB 15.6 MB/s eta 0:00:00
+Using cached protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl (343 kB)
+Downloading pyarrow-26.0.0-cp314-cp314-manylinux_2_28_x86_64.whl (54.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.0/54.0 MB 11.9 MB/s eta 0:00:00
+Downloading pydeck-0.9.3-py2.py3-none-any.whl (11.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.4/11.4 MB 8.7 MB/s eta 0:00:00
+Downloading python_multipart-0.0.33-py3-none-any.whl (32 kB)
+Downloading watchdog-6.0.0-py3-none-manylinux2014_x86_64.whl (79 kB)
+Using cached websockets-17.4-cp314-cp314-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (226 kB)
+Downloading narwhals-2.28.0-py3-none-any.whl (490 kB)
+Downloading python_dateutil-4.0.0-py3-none-any.whl (92 kB)
+Downloading tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+Building wheels for collected packages: tsa-polymarket-research
+  Building editable for tsa-polymarket-research (pyproject.toml): started
+  Building editable for tsa-polymarket-research (pyproject.toml): finished with status 'done'
+  Created wheel for tsa-polymarket-research: filename=tsa_polymarket_research-0.1.0-0.editable-py3-none-any.whl size=1772 sha256=4c7ecb97685eb7a4e14e75d8e4e7fd0e007ad2b090b1e3c18e55c411325e9de7
+  Stored in directory: /tmp/pip-ephem-wheel-cache-85i6f1_x/wheels/ec/8b/b0/ff98f9740b5d17d47162215be8d089b84e9b2377a12927ed11
+Successfully built tsa-polymarket-research
+Installing collected packages: websockets, watchdog, tzdata, python-multipart, pyarrow, protobuf, numpy, narwhals, itsdangerous, duckdb, python-dateutil, pydeck, pandas, altair, streamlit, tsa-polymarket-research
+  Attempting uninstall: tsa-polymarket-research
+    Found existing installation: tsa-polymarket-research 0.1.0
+    Uninstalling tsa-polymarket-research-0.1.0:
+      Successfully uninstalled tsa-polymarket-research-0.1.0
+
+Successfully installed altair-6.3.0 duckdb-1.5.6 itsdangerous-2.2.0 narwhals-2.28.0 numpy-2.5.4 pandas-3.1.0 protobuf-7.36.2 pyarrow-26.0.0 pydeck-0.9.3 python-dateutil-4.0.0 python-multipart-0.0.33 streamlit-1.66.1 tsa-polymarket-research-0.1.0 tzdata-2026.6 watchdog-6.0.0 websockets-17.4

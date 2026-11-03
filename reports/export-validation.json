@@ -1,0 +1,6 @@
+{
+  "snapshots": 4295,
+  "throughput_rows": 1036,
+  "parquet_throughput_rows": 1036,
+  "parquet_snapshot_rows": 4295
+}

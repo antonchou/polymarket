@@ -1,0 +1,22 @@
+{
+  "base": {
+    "available": false,
+    "reason": "No historical book snapshots",
+    "net_profit": null
+  },
+  "latency_30s": {
+    "available": false,
+    "reason": "No historical book snapshots",
+    "net_profit": null
+  },
+  "slippage_3c": {
+    "available": false,
+    "reason": "No historical book snapshots",
+    "net_profit": null
+  },
+  "bias_15pp": {
+    "available": false,
+    "reason": "No historical book snapshots",
+    "net_profit": null
+  }
+}

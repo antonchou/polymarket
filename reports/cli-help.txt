@@ -1,0 +1,12 @@
+usage: tsa [-h] [--data-dir DATA_DIR] [--config CONFIG]
+           {fetch-data,discover-markets,collect-books,review-rules,train,backtest,replay,paper,status,export,dashboard,settle} ...
+
+TSA public research / paper only
+
+positional arguments:
+  {fetch-data,discover-markets,collect-books,review-rules,train,backtest,replay,paper,status,export,dashboard,settle}
+
+options:
+  -h, --help            show this help message and exit
+  --data-dir DATA_DIR
+  --config CONFIG

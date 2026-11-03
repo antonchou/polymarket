@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://gamma-api.polymarket.com/markets?closed=false&limit=1",
+    "status": 200,
+    "bytes": 6206
+  },
+  {
+    "url": "https://www.tsa.gov/travel/passenger-volumes",
+    "status": 200,
+    "bytes": 196862
+  },
+  {
+    "url": "https://pypi.org/simple/duckdb/",
+    "status": 200,
+    "bytes": 3099711
+  }
+]

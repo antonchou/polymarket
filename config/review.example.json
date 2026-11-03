@@ -1,0 +1,23 @@
+{
+  "_comment": "SCHEMA EXAMPLE ONLY. Replace every identifier, rule and date using complete actual settlement rules; this file is not a real contract or an approval.",
+  "market_id": "REPLACE_WITH_REAL_MARKET_ID",
+  "rules_version": "REPLACE_WITH_SNAPSHOT_HASH",
+  "start": "2026-11-10",
+  "end": "2026-11-10",
+  "timezone": "America/New_York",
+  "deadline": "2026-11-15T17:00:00-05:00",
+  "lower": 2100000,
+  "upper": null,
+  "lower_inclusive": false,
+  "upper_inclusive": false,
+  "rounding": "integer_exact",
+  "revision_policy": "first_release",
+  "missing_policy": "no_trade",
+  "cancellation_policy": "no_trade",
+  "other_policy": "no_trade",
+  "payout": "binary_0_1",
+  "source": "https://www.tsa.gov/travel/passenger-volumes",
+  "reviewer": "REPLACE_WITH_REVIEWER",
+  "evidence": "REPLACE_WITH_FULL_RULES_INTERPRETATION_AND_EVIDENCE",
+  "family": "REPLACE_WITH_STATISTICAL_EVENT_FAMILY"
+}

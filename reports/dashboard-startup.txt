@@ -1,0 +1,7 @@
+2026-11-03 15:02:07.317 Uvicorn server started on 127.0.0.1:60061
+
+  You can now view your Streamlit app in your browser.
+
+  URL: http://127.0.0.1:60061
+
+  Stopping...

@@ -1,0 +1,36 @@
+{
+  "mode": "observed_information_forecast_validation",
+  "assumptions": {
+    "publication_lag_days": null,
+    "revision_vintages_reconstructed": false,
+    "threshold": "training weekday forecast rounded to 100k",
+    "multi_day_error_model": "one-step residual blocks; horizon calibration provisional"
+  },
+  "metrics": {},
+  "calibration": [],
+  "baseline_comparison": {
+    "families": 0,
+    "mae_improvement": null,
+    "brier_improvement": null,
+    "ci95": null
+  },
+  "event_families": 0,
+  "uncertainty": "Report grouped samples; insufficient evidence for stable returns",
+  "market_comparison": null,
+  "market_comparison_reason": "No matched historical executable books",
+  "trading": {
+    "net_profit": null,
+    "maximum_drawdown": null,
+    "fill_rate": null,
+    "peak_capital": null,
+    "average_holding_days": null,
+    "reason": "Forecast validation is not trade replay"
+  },
+  "sensitivity": {
+    "execution_latency": null,
+    "slippage": null,
+    "model_bias": null,
+    "reason": "Requires historical books for execution sensitivity"
+  },
+  "rows": []
+}
